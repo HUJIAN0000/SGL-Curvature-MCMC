@@ -1,5 +1,11 @@
 # SGL-Curvature-MCMC
 A precision cosmology pipeline for constraining cosmic curvature ($\Omega_k$) and lens density evolution ($\gamma_z$) through SGL dual-method cross-validation, featuring full non-diagonal covariance propagation and Jacobian broadcasting.
+### ⚠️ Important: Data Preparation
+Due to GitHub's file size limitations, the pre-computed forward covariance matrix **`DES_Dovekie_CovTotal.txt`** is provided in a compressed ZIP format (`DES_Dovekie_CovTotal.zip`). 
+
+**Before running the MCMC analysis, please:**
+1. Unzip `DES_Dovekie_CovTotal.zip`.
+2. Ensure the extracted `DES_Dovekie_CovTotal.txt` is placed in the same directory as the Python scripts.
 
 ## 📂 Repository Structure & File Descriptions
 

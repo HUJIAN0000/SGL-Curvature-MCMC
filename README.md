@@ -26,6 +26,9 @@ This repository contains the complete codebase and datasets required to reproduc
     * **Description:** Performs the Kolmogorov-Smirnov (K-S) test to statistically prove that the 92 matched exact-pairing samples have no selection bias relative to the original parent sample.
 * **`cosmo_tools.py`**
     * **Description:** Utility module containing functions for corner plot generation (via `getdist`) and chain statistics calculation.
+* **`CosmoMatcher_v1.0.py`**
+    * **Description:** A specialized preprocessing engine that implements the **Mixed-Integer Linear Programming (MILP)** matching pipeline (Algorithm 1 in our paper). It performs high-precision, one-to-one cross-matching between Strong Gravitational Lensing (SGL) systems and Type Ia Supernovae (SNe Ia) to minimize redshift residuals and ensure the validity of the "Exact Pairing" framework.
+    * **Key Feature:** Unlike traditional nearest-neighbor searches, this script treats the matching process as a global optimization problem, significantly reducing systematic biases in cosmic distance measurements.
 
 ### 📊 2. Datasets (`/data`)
 

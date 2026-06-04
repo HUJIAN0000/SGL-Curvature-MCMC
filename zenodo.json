@@ -1,0 +1,17 @@
+{
+  "title": "SGL-Curvature-MCMC: pipeline for cosmic-curvature inference from strong lensing with full SN covariance propagation",
+  "upload_type": "software",
+  "description": "Numerical pipeline accompanying Hu & Liu (2026): the MILP-based SGL-SN matching engine (CosmoMatcher), covariance-reconstruction scripts, and MCMC sampling codes for joint inference of the cosmic curvature and the lens density-slope evolution. Associated manuscript: AAS76952.",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Hu, Jian",
+      "orcid": "0000-0002-4797-4107",
+      "affiliation": "Institute of Astronomy and Information, Dali University"
+    },
+    {
+      "name": "Liu, Yi",
+      "affiliation": "Department of Engineering, Dali University"
+    }
+  ]
+}

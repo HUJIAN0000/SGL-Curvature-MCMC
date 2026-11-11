@@ -1,6 +1,6 @@
 {
   "verified_date": "2026-11-12",
-  "version": "10.0.0",
+  "version": "1.0.1",
   "variant": "Code, data, figures; no manuscript or chains",
   "checks": [
     {
@@ -24,5 +24,7 @@
       "passed": true
     }
   ],
-  "sampling_performed": false
+  "sampling_performed": false,
+  "manuscript_revision": "v10",
+  "version_metadata_updated": "2026-11-12"
 }

@@ -1,5 +1,7 @@
 # SGL-Curvature-MCMC
 
+Public software version: **1.0.1**. The manuscript revision label **v10** is an internal document version and is separate from the software release number.
+
 Code, observational inputs, saved numerical summaries, and **all six figures** for the prepared v10 revision of *Joint Inference of Cosmic Curvature and Lens Density-Slope Evolution with Full Supernova Covariance and a CMB Geometric Constraint*.
 
 Authors: Jian Hu, Yi Liu, Chen Wang, Jian-Ping Hu, Jia Zhao, and Liangqing Zhu.

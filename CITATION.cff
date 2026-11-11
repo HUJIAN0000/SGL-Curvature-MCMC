@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this software or reproducibility package, please cite both this software release and the accompanying Astrophysical Journal article."
 type: software
 title: "SGL-Curvature-MCMC: Joint Inference of Cosmic Curvature and Lens Density-Slope Evolution"
-version: "10.0.0"
-date-released: "2026-11-11"
+version: "1.0.1"
+date-released: "2026-11-12"
 license: MIT
 repository-code: "https://github.com/HUJIAN0000/SGL-Curvature-MCMC"
 url: "https://github.com/HUJIAN0000/SGL-Curvature-MCMC"

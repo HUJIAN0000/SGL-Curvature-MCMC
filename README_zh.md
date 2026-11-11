@@ -1,5 +1,7 @@
 # SGL-Curvature-MCMC：GitHub 上传版
 
+公开软件版本为 **1.0.1**；论文内部修订编号仍为 **v10**，二者分别管理。
+
 本文件夹对应 v10 修改稿，包含分析代码、输入数据、28 组结果摘要、诊断表格、全部六张论文图片。MCMC 参数链和潜在距离链不包含在内。
 
 **主要三角图：** [PDF](figures/fig_triangle.pdf) / [PNG](figures/fig_triangle.png)。首页直接显示 PNG，`figures/` 集中存放全部六张图片。

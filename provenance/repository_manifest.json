@@ -1,5 +1,5 @@
 {
-  "version": "10.0.0",
+  "version": "1.0.1",
   "release_status": "prepared-code-data-figures-only",
   "files": [
     {
@@ -44,8 +44,8 @@
     },
     {
       "path": "CITATION.cff",
-      "bytes": 1586,
-      "sha256": "8b758ded0f4d5a6311e14cb2ed86f046e164595d8e621a9262162cc7bd6dacfe"
+      "bytes": 1585,
+      "sha256": "9da0389a8b9d7368ec53ca8feba9573d3321281acdd42a6c2c61bd6c70a9308c"
     },
     {
       "path": "codeanddata/130sgls2.CSV",
@@ -214,8 +214,8 @@
     },
     {
       "path": "provenance/package_checks.json",
-      "bytes": 629,
-      "sha256": "8fb451c8e1717eeac1b42e0d1a8a6e1b0cff50b0631359687c5d2c3a9bdbf3e8"
+      "bytes": 706,
+      "sha256": "1f88019c83e47fd39b4d5cdc92c73e9f05dd0e9e6bb7a58948424bc1f479eaa7"
     },
     {
       "path": "provenance/portability_changes.json",
@@ -234,13 +234,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 5968,
-      "sha256": "d42cf7ba07219c3462f5275145654e10a1591ab31d834e5fa8695372abd62097"
+      "bytes": 6127,
+      "sha256": "86b171ab2d68499da4b5aa2ce275c10281c5a8c9bba02f3fa1fcce4eb17f6fa5"
     },
     {
       "path": "README_zh.md",
-      "bytes": 3113,
-      "sha256": "f482d814605074867ea0ebeb39b66d90121399f0da5c49e8bd15ed2c94248fca"
+      "bytes": 3213,
+      "sha256": "b147b552886b508ecedaa556065837c076578898473a0293913dd1f1bdbeb21c"
     },
     {
       "path": "render_results.py",
@@ -1277,5 +1277,6 @@
       "bytes": 1909,
       "sha256": "3f281f3e896da7ecc8ba5cddd3abbb27c5b44008bea734764b8c2f6a945b95dc"
     }
-  ]
+  ],
+  "manuscript_revision": "v10"
 }

@@ -1,0 +1,28 @@
+{
+  "verified_date": "2026-11-12",
+  "version": "10.0.0",
+  "variant": "Code, data, figures; no manuscript or chains",
+  "checks": [
+    {
+      "command": "python reproduce.py prepare",
+      "returncode": 0,
+      "passed": true
+    },
+    {
+      "command": "python reproduce.py verify",
+      "returncode": 0,
+      "passed": true
+    },
+    {
+      "command": "python -m unittest discover -s tests -v",
+      "returncode": 0,
+      "passed": true
+    },
+    {
+      "command": "python reproduce.py matching",
+      "returncode": 0,
+      "passed": true
+    }
+  ],
+  "sampling_performed": false
+}

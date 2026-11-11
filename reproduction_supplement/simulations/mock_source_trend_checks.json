@@ -1,0 +1,154 @@
+{
+  "discrepancy": "abs(sum_i w_i * (sigma_obs_i - sigma_model_i) / sqrt(dsigma_i^2 + (f_int*sigma_model_i)^2))",
+  "weight": "source redshift centered across the fixed 88 lenses, then normalized to unit L2 norm",
+  "conditional_replicated_distribution": "signed score is standard Normal at each fitted joint state",
+  "analytic_PPC": "posterior mean of 2*Phi(-abs(observed signed score)); no replication Monte Carlo error",
+  "theta_mu_alignment": "same chain and exact mu_saved_indices from the corresponding mock summary",
+  "limitations": "Six illustrative mocks are not an empirical null calibration; the data are reused for fitting and PPC, and matching/selection and omitted lens physics are not simulated.",
+  "results": [
+    {
+      "realization": "constant_01",
+      "truth_gamma_z": 0.0,
+      "joint_posterior_states": 1600,
+      "analytic_source_trend_PPC": 0.6259680665685302,
+      "observed_signed_score_q02275_q15865_median_q84135_q97725": [
+        -1.168391195715071,
+        -0.4789756725449453,
+        0.1579865276035931,
+        0.8145630765113412,
+        1.4175287470727553
+      ],
+      "chainwise_analytic_source_trend_PPC": [
+        0.6194490593495168,
+        0.6408601538666332,
+        0.6073886030154275,
+        0.6361744500425435
+      ],
+      "generating_velocity_noise_signed_score_at_truth": 1.2054695744125465,
+      "generating_velocity_noise_two_sided_normal_tail_at_truth": 0.22802207678182518,
+      "max_Rhat": 1.0011200078771114,
+      "min_ESS": 4573.993003289064,
+      "fit_input_array_hash_matches_generated_data": true
+    },
+    {
+      "realization": "constant_02",
+      "truth_gamma_z": 0.0,
+      "joint_posterior_states": 1600,
+      "analytic_source_trend_PPC": 0.5848770496497366,
+      "observed_signed_score_q02275_q15865_median_q84135_q97725": [
+        -0.7081382600145252,
+        -0.07202595437082462,
+        0.4881872778094362,
+        1.018462306666131,
+        1.5339424122850012
+      ],
+      "chainwise_analytic_source_trend_PPC": [
+        0.5978695472166751,
+        0.5839344386420471,
+        0.5755430345134683,
+        0.582161178226756
+      ],
+      "generating_velocity_noise_signed_score_at_truth": 0.7834062435065177,
+      "generating_velocity_noise_two_sided_normal_tail_at_truth": 0.4333885909348807,
+      "max_Rhat": 1.0004683144419457,
+      "min_ESS": 6226.903538575137,
+      "fit_input_array_hash_matches_generated_data": true
+    },
+    {
+      "realization": "constant_03",
+      "truth_gamma_z": 0.0,
+      "joint_posterior_states": 1600,
+      "analytic_source_trend_PPC": 0.6183059890296695,
+      "observed_signed_score_q02275_q15865_median_q84135_q97725": [
+        -1.5009079157525385,
+        -0.8876460073398765,
+        -0.28768568883687673,
+        0.3474055161907973,
+        0.9811483155246119
+      ],
+      "chainwise_analytic_source_trend_PPC": [
+        0.6144856881603404,
+        0.634956580388312,
+        0.619189245745231,
+        0.6045924418247943
+      ],
+      "generating_velocity_noise_signed_score_at_truth": 0.06122737609629594,
+      "generating_velocity_noise_two_sided_normal_tail_at_truth": 0.9511781276556565,
+      "max_Rhat": 1.001009446412207,
+      "min_ESS": 8604.757805324694,
+      "fit_input_array_hash_matches_generated_data": true
+    },
+    {
+      "realization": "evolving_01",
+      "truth_gamma_z": -0.2,
+      "joint_posterior_states": 1600,
+      "analytic_source_trend_PPC": 0.6722383366536269,
+      "observed_signed_score_q02275_q15865_median_q84135_q97725": [
+        -1.2362072729665452,
+        -0.7249120440879523,
+        -0.15068500245809757,
+        0.3650804033477341,
+        0.9106542922548527
+      ],
+      "chainwise_analytic_source_trend_PPC": [
+        0.6738985805645571,
+        0.6817859686490467,
+        0.6664249760887632,
+        0.6668438213121405
+      ],
+      "generating_velocity_noise_signed_score_at_truth": 0.7495757609205099,
+      "generating_velocity_noise_two_sided_normal_tail_at_truth": 0.4535102539331809,
+      "max_Rhat": 1.0008390019418858,
+      "min_ESS": 7171.794062014117,
+      "fit_input_array_hash_matches_generated_data": true
+    },
+    {
+      "realization": "evolving_02",
+      "truth_gamma_z": -0.2,
+      "joint_posterior_states": 1600,
+      "analytic_source_trend_PPC": 0.426720908696589,
+      "observed_signed_score_q02275_q15865_median_q84135_q97725": [
+        -2.00369963041421,
+        -1.449360100435798,
+        -0.8701564122815565,
+        -0.311910305689427,
+        0.19333146483641414
+      ],
+      "chainwise_analytic_source_trend_PPC": [
+        0.40375153022097854,
+        0.4275515080440544,
+        0.44295840903650024,
+        0.43262218748482284
+      ],
+      "generating_velocity_noise_signed_score_at_truth": -0.47237238499513245,
+      "generating_velocity_noise_two_sided_normal_tail_at_truth": 0.6366610117531897,
+      "max_Rhat": 1.000682183689954,
+      "min_ESS": 7413.958785428492,
+      "fit_input_array_hash_matches_generated_data": true
+    },
+    {
+      "realization": "evolving_03",
+      "truth_gamma_z": -0.2,
+      "joint_posterior_states": 1600,
+      "analytic_source_trend_PPC": 0.38364804025520305,
+      "observed_signed_score_q02275_q15865_median_q84135_q97725": [
+        -2.276767034237996,
+        -1.6069459954711964,
+        -0.9829373812129228,
+        -0.3641106563147587,
+        0.2127906803596571
+      ],
+      "chainwise_analytic_source_trend_PPC": [
+        0.3913197906555152,
+        0.3854863260682094,
+        0.3725929258867764,
+        0.38519311841031123
+      ],
+      "generating_velocity_noise_signed_score_at_truth": -0.16126644289705416,
+      "generating_velocity_noise_two_sided_normal_tail_at_truth": 0.8718835519738426,
+      "max_Rhat": 1.0006749546223663,
+      "min_ESS": 9822.802519074388,
+      "fit_input_array_hash_matches_generated_data": true
+    }
+  ]
+}

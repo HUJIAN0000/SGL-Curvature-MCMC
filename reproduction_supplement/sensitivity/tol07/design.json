@@ -1,0 +1,26 @@
+{
+  "case": "tol07",
+  "sigma_mu_max": 0.3,
+  "relative_distance_tolerance": 0.07,
+  "Omega_m_fiducial": 0.3,
+  "H0_fixed": 70.0,
+  "Omega_lower": -0.09405370006986057,
+  "gamma_z_bounds": [
+    -0.5,
+    0.5
+  ],
+  "selected_sn_rows": 1641,
+  "matched_lenses": 91,
+  "software_version": "1.4.3",
+  "common_lenses_with_reference": 87,
+  "identical_triplets_with_reference": 67,
+  "lost_lenses": [
+    "SDSSJ1204+0358"
+  ],
+  "gained_lenses": [
+    "SDSSJ1010+3124",
+    "SDSSJ1016+3859",
+    "SDSSJ1213+2930",
+    "SDSSJ2238-0754"
+  ]
+}

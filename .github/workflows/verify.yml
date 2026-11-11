@@ -1,0 +1,17 @@
+name: Snapshot verification
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - run: python reproduce.py prepare
+      - run: python reproduce.py verify
+      - run: python -m unittest discover -s tests -v
+# Full chain verification needs the separate release asset; this workflow explicitly
+# covers repository integrity and numerical model checks, not long MCMC convergence.

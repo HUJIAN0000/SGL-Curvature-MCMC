@@ -1,0 +1,22 @@
+{
+  "case": "signed_envelope",
+  "N_lenses": 88,
+  "joint_states": 2664,
+  "source_redshift_PPC_analytic": 0.0025471153787135644,
+  "source_redshift_signed_score_median": -3.371515111471744,
+  "partial_source_redshift_PPC_analytic": 0.01214275694624582,
+  "overall_squared_residual_PPC_analytic": 0.43511417526636664,
+  "Omega_quantiles": [
+    -0.04273380272002891,
+    0.1152626045934829,
+    0.48835788605920366
+  ],
+  "gamma_z_quantiles": [
+    -0.4779497382583127,
+    -0.41367764559935216,
+    -0.27593776617836757
+  ],
+  "max_Rhat": 1.000361672353979,
+  "min_ESS": 7441.889979465344,
+  "interpretation": "In-sample posterior-predictive probability under this specified distance assignment; not a frequentist p-value or an independent validation."
+}

@@ -1,0 +1,27 @@
+{
+  "mode": "sgls",
+  "sn_type": "des",
+  "algo": "milp",
+  "tol_type": "dd",
+  "file_paths": {
+    "tracer": "reproduction/des_quality_catalogue.csv",
+    "obj": "codeanddata/130sgls2.CSV",
+    "covariance": "reproduction/des_covariance.npy"
+  },
+  "col_cfg": {
+    "tracer_z_col": "zHD",
+    "z1_col": "zl",
+    "z2_col": "zs",
+    "cov_index_col": "Index",
+    "mu_col": "MU"
+  },
+  "params": {
+    "tol": 0.05,
+    "wm": 0.2,
+    "unique_by": "row",
+    "tie_break": "none",
+    "plots": false,
+    "require_covariance": true,
+    "output_dir": "reproduction/match_om02"
+  }
+}

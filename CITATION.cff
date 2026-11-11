@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this software or reproducibility package, please cite both this software release and the accompanying Astrophysical Journal article."
+type: software
+title: "SGL-Curvature-MCMC: Joint Inference of Cosmic Curvature and Lens Density-Slope Evolution"
+version: "10.0.0"
+date-released: "2026-11-11"
+license: MIT
+repository-code: "https://github.com/HUJIAN0000/SGL-Curvature-MCMC"
+url: "https://github.com/HUJIAN0000/SGL-Curvature-MCMC"
+authors:
+  - family-names: "Hu"
+    given-names: "Jian"
+    orcid: "https://orcid.org/0000-0002-4797-4107"
+  - family-names: "Liu"
+    given-names: "Yi"
+    orcid: "https://orcid.org/0000-0003-2271-6723"
+  - family-names: "Wang"
+    given-names: "Chen"
+    orcid: "https://orcid.org/0000-0001-8923-7757"
+  - family-names: "Hu"
+    given-names: "Jian-Ping"
+    orcid: "https://orcid.org/0000-0002-5819-5002"
+  - family-names: "Zhao"
+    given-names: "Jia"
+    orcid: "https://orcid.org/0009-0004-9093-6482"
+  - family-names: "Zhu"
+    given-names: "Liangqing"
+    orcid: "https://orcid.org/0009-0001-8041-5243"
+abstract: "Reproducible Bayesian inference pipeline for cosmic curvature and galaxy-scale strong-lens mass-density slope evolution with full Type Ia supernova covariance, two-stage MILP tracer assignment (CosmoMatcher v1.4.3), nonlinear latent-modulus marginalization, posterior-predictive diagnostics, and fixed-design known-truth simulations."
+keywords:
+  - cosmology
+  - strong gravitational lensing
+  - spatial curvature
+  - Type Ia supernovae
+  - Bayesian inference

@@ -1,0 +1,6 @@
+# Preserve shipped bytes: the checksum manifest includes text and scientific inputs.
+* -text
+*.npy binary
+*.npz binary
+*.pdf binary
+*.png binary

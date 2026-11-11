@@ -1,0 +1,256 @@
+{
+  "archive": "saved_chains_apj_v6_20261025.zip",
+  "saved_runs": 28,
+  "files": [
+    {
+      "path": "reproduction_physical/linear_base_chains.npy",
+      "bytes": 38400128,
+      "sha256": "e8f069c7dae9950fc2d7697ffbb22c10b7d727bf77445a46b90a80ea975a1132"
+    },
+    {
+      "path": "reproduction_physical/linear_diagonal_chains.npy",
+      "bytes": 38400128,
+      "sha256": "1d4e229f1d99e7179a83bd3b7bccbf2c9a80c6496421d033ca8fb8d683d065c2"
+    },
+    {
+      "path": "reproduction_physical/linear_nomismatch_chains.npy",
+      "bytes": 38400128,
+      "sha256": "52eabf9395e28d18d8543a6b47d84208d0f738ddafd0b76e196f8ab39a96e3be"
+    },
+    {
+      "path": "reproduction_physical/linear_transfer_chains.npy",
+      "bytes": 38400128,
+      "sha256": "2710d24e1ae53831a4d0141664211b1e648b9a8d487ac9a84222ab06e3390a5c"
+    },
+    {
+      "path": "reproduction_physical/linear_union_all_chains.npy",
+      "bytes": 38400128,
+      "sha256": "da2c81b62351ed8c68114a7a9d027a9b0e97ceef0e72efba0237f7c757a42bbd"
+    },
+    {
+      "path": "reproduction_physical/linear_union_same_chains.npy",
+      "bytes": 38400128,
+      "sha256": "9e474074608a19ed197d3e2eb4971fd2c729d2fcfbd847182496b56f1322c4ec"
+    },
+    {
+      "path": "reproduction_physical/nonlinear_base_chains.npy",
+      "bytes": 16000128,
+      "sha256": "7338c9c418a95b5f5f7c0337960627bfdfca9d94d4df312f7400e47050b80dde"
+    },
+    {
+      "path": "reproduction_physical/nonlinear_base_mu.npy",
+      "bytes": 3751040,
+      "sha256": "b663f837b2288fdb657c93b494e07e11772ba8a4d0ad67adb8346400a51068bc"
+    },
+    {
+      "path": "reproduction_physical/nonlinear_beta_prior_chains.npy",
+      "bytes": 16000128,
+      "sha256": "4ecbdb06edf8866e674963d69a2de64088cd0c161f0fc1c2d7d6abc8dd3da925"
+    },
+    {
+      "path": "reproduction_physical/nonlinear_beta_prior_mu.npy",
+      "bytes": 3751040,
+      "sha256": "03d41b7fe33049a0e8114674cd590152dd88a68c3540fea383c8b8b26a173529"
+    },
+    {
+      "path": "reproduction_physical/nonlinear_delta_minus_chains.npy",
+      "bytes": 16000128,
+      "sha256": "3e095fc96cd049fa6f1f7275ec1982cec5b0639016b032f1605344289c4b0b93"
+    },
+    {
+      "path": "reproduction_physical/nonlinear_delta_minus_mu.npy",
+      "bytes": 3751040,
+      "sha256": "874aa7f87989011ae35c2096782b4092c9c60900a123398afb88a302c29a4951"
+    },
+    {
+      "path": "reproduction_physical/nonlinear_delta_plus_chains.npy",
+      "bytes": 16000128,
+      "sha256": "768975f347bd693a03a6af58d1e0d28cc1c2af0f92ec33ca59f2eca302ab6e01"
+    },
+    {
+      "path": "reproduction_physical/nonlinear_delta_plus_mu.npy",
+      "bytes": 3751040,
+      "sha256": "71c246af9049c0cd18629e970ceb3eb0ec04cde2c4f881b5d9796b0a7e296856"
+    },
+    {
+      "path": "reproduction_physical/nonlinear_gzwide_chains.npy",
+      "bytes": 16000128,
+      "sha256": "7a145717b2d241a1f7b204d5ad1218746c611329815abb5b68a76e8ed2a4a4fe"
+    },
+    {
+      "path": "reproduction_physical/nonlinear_gzwide_mu.npy",
+      "bytes": 3751040,
+      "sha256": "f54350baa63ad52f0d84475e91147fd72894e043608c50551ff8cc7a8cf330ca"
+    },
+    {
+      "path": "reproduction_physical/nonlinear_lens_noise_chains.npy",
+      "bytes": 16000128,
+      "sha256": "a24129fdaad8630332994c4848c30c0b3ece4d46c830dadd16917e5819c0c8ae"
+    },
+    {
+      "path": "reproduction_physical/nonlinear_lens_noise_mu.npy",
+      "bytes": 3751040,
+      "sha256": "aff7cced32fa5024292d47c261272299959b5fc5666efe7cf5f7166789067154"
+    },
+    {
+      "path": "reproduction_physical/nonlinear_soft07_chains.npy",
+      "bytes": 16000128,
+      "sha256": "f8299196a5e2be99620c825f5a05dacbd94ad77ebb3f3706452bb42f4e31ebd3"
+    },
+    {
+      "path": "reproduction_physical/nonlinear_soft07_mu.npy",
+      "bytes": 3751040,
+      "sha256": "c440f14a1a0dfdcc060877d97d54241ffbf5eb3b54e99f141c3d34741a55d49a"
+    },
+    {
+      "path": "reproduction_supplement/exact_redshift/gp_fid/joint_chains.npy",
+      "bytes": 16000128,
+      "sha256": "205db8ea27d9054c4f13403d6e68c0a7f0a785b594b94ed1d83aa5ab75dc1c73"
+    },
+    {
+      "path": "reproduction_supplement/exact_redshift/gp_fid/joint_mu.npy",
+      "bytes": 3751040,
+      "sha256": "0a4dd7bbb4c83eae4a88d5b0ad37f0228889b2b764aa155141464bf409eef70a"
+    },
+    {
+      "path": "reproduction_supplement/exact_redshift/gp_log/joint_chains.npy",
+      "bytes": 16000128,
+      "sha256": "ff52e0f39a15b327a0b8d2ceae4fd906c2b8c872be2490ecb2a4573253e4e1b5"
+    },
+    {
+      "path": "reproduction_supplement/exact_redshift/gp_log/joint_mu.npy",
+      "bytes": 3751040,
+      "sha256": "0593b3670f271bda449566b7aaeaf44098b145dbe8ea35b5e93de79b483b8a30"
+    },
+    {
+      "path": "reproduction_supplement/exact_redshift/signed_envelope/joint_chains.npy",
+      "bytes": 16000128,
+      "sha256": "e2ce0152b0778263895a9a53c3e477aa1bf097c9876bc4901149475e9ea841e8"
+    },
+    {
+      "path": "reproduction_supplement/exact_redshift/signed_envelope/joint_mu.npy",
+      "bytes": 3751040,
+      "sha256": "c67959e7c851b307c083711b8150947376ffc7a5089cfa1230b9351f5c6120ba"
+    },
+    {
+      "path": "reproduction_supplement/exact_redshift/signed_no_envelope/joint_chains.npy",
+      "bytes": 16000128,
+      "sha256": "426db96f5be3fda6b4627130b9549acc671cc16aeb6a0dbd6b50bb7d44fb55d3"
+    },
+    {
+      "path": "reproduction_supplement/exact_redshift/signed_no_envelope/joint_mu.npy",
+      "bytes": 3751040,
+      "sha256": "70e0ac69694175eb52900a99f133112a675d0c03afb8d935d906643c69bf938a"
+    },
+    {
+      "path": "reproduction_supplement/sensitivity/quality025/nonlinear_chains.npy",
+      "bytes": 16000128,
+      "sha256": "d0375151d90f6e0f34368d990cefa5decd5c388ecafe979c1b44270cc7b8357a"
+    },
+    {
+      "path": "reproduction_supplement/sensitivity/quality025/nonlinear_mu.npy",
+      "bytes": 3708416,
+      "sha256": "95cbd8ee6c5aff25b5884fb8b25c96ac822ef0bee524870238bdc008917442d3"
+    },
+    {
+      "path": "reproduction_supplement/sensitivity/quality035/nonlinear_chains.npy",
+      "bytes": 16000128,
+      "sha256": "480614fd05cb2cf11deff4b9aade9ca5b44bf09b3d02b08d2ceb9dc30655e2b7"
+    },
+    {
+      "path": "reproduction_supplement/sensitivity/quality035/nonlinear_mu.npy",
+      "bytes": 3751040,
+      "sha256": "c53a4c0c7cdf95f4d541da647bdbf22c6780239f65dd3030c50189a774bd4997"
+    },
+    {
+      "path": "reproduction_supplement/sensitivity/tol03/nonlinear_chains.npy",
+      "bytes": 16000128,
+      "sha256": "d5397ab6401d7b722c9f12c13885f6905fc50225fe510570fd41e863c2e5ec4c"
+    },
+    {
+      "path": "reproduction_supplement/sensitivity/tol03/nonlinear_mu.npy",
+      "bytes": 3452672,
+      "sha256": "ec93d6b732e759b05deff5dc1489036e2372825e0c9e2cca2c7659e2101157dd"
+    },
+    {
+      "path": "reproduction_supplement/sensitivity/tol07/nonlinear_chains.npy",
+      "bytes": 16000128,
+      "sha256": "73fcddb52e78154b5adeccdb550ddeaf45dd685717741092c5137594ad35ed98"
+    },
+    {
+      "path": "reproduction_supplement/sensitivity/tol07/nonlinear_mu.npy",
+      "bytes": 3878912,
+      "sha256": "a1487d0a221e08b51864f9123530deebcc774d8efd394cafbd3984172f975122"
+    },
+    {
+      "path": "reproduction_supplement/sensitivity/upper5/nonlinear_chains.npy",
+      "bytes": 16000128,
+      "sha256": "f187053e30561601b2264373a7c7526ff32149f9f56a6dac77b5617b2bc7201b"
+    },
+    {
+      "path": "reproduction_supplement/sensitivity/upper5/nonlinear_mu.npy",
+      "bytes": 3751040,
+      "sha256": "cc24d97f8aa8a410bb7384cbb84700948651a90709860df41eaf068b3747f41b"
+    },
+    {
+      "path": "reproduction_supplement/simulations/constant_01_chains.npy",
+      "bytes": 9600128,
+      "sha256": "d894c150cc6d4f3c91068f11a117f022707601b2c4278fef0fa0da44212d1bd7"
+    },
+    {
+      "path": "reproduction_supplement/simulations/constant_01_mu.npy",
+      "bytes": 2252928,
+      "sha256": "a7b1ba9f254407b9f2920cd72e85f6c53d8c8c40f67606551da15bb9705cb93d"
+    },
+    {
+      "path": "reproduction_supplement/simulations/constant_02_chains.npy",
+      "bytes": 9600128,
+      "sha256": "f740dfb013a5d66e5bd4acfdedc46ad30d6f4ef02747d936aaa5975b4f1c8530"
+    },
+    {
+      "path": "reproduction_supplement/simulations/constant_02_mu.npy",
+      "bytes": 2252928,
+      "sha256": "425fdfc0a1a180a9c25f862053150910b64d4740e44a6c1e279d10b991313cab"
+    },
+    {
+      "path": "reproduction_supplement/simulations/constant_03_chains.npy",
+      "bytes": 9600128,
+      "sha256": "475f3f955ba27d1af5dc6992ff61e0aaa8075836b3b06e4099349f8700109048"
+    },
+    {
+      "path": "reproduction_supplement/simulations/constant_03_mu.npy",
+      "bytes": 2252928,
+      "sha256": "57f74a9c7a79f2fdeade8d209fd04267de8d5913ffe10527579094bee90eef91"
+    },
+    {
+      "path": "reproduction_supplement/simulations/evolving_01_chains.npy",
+      "bytes": 9600128,
+      "sha256": "4ae6c07f3caed3560bf66eacb2d5fba10b8d9496903ef98638b97443d27e50da"
+    },
+    {
+      "path": "reproduction_supplement/simulations/evolving_01_mu.npy",
+      "bytes": 2252928,
+      "sha256": "cbba243ae465a19f4cb151f04fa18176394cf17cd492fa23b01b8b79f5078d64"
+    },
+    {
+      "path": "reproduction_supplement/simulations/evolving_02_chains.npy",
+      "bytes": 9600128,
+      "sha256": "1c9cc8ddb2d7cd30acfacead70b66b8fd5177e3d3ed457b9e47d4ff26a68be9c"
+    },
+    {
+      "path": "reproduction_supplement/simulations/evolving_02_mu.npy",
+      "bytes": 2252928,
+      "sha256": "86a263879b415cfc219814e886f835e19e10eb2efd495de63ab5a081ee8215cb"
+    },
+    {
+      "path": "reproduction_supplement/simulations/evolving_03_chains.npy",
+      "bytes": 9600128,
+      "sha256": "eec059b5e5aea9d456559b4f87f184bc2568e87c671b0ec276f961bae74cc32b"
+    },
+    {
+      "path": "reproduction_supplement/simulations/evolving_03_mu.npy",
+      "bytes": 2252928,
+      "sha256": "4bc2eeb42d4817bedde2baabb1c03c6176f5b6e62a90a69fab26db11cbdf962a"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "version": "1.4.3",
+  "mode": "sgls",
+  "sn_type": "des",
+  "algorithm": "milp",
+  "criterion": "dd",
+  "tolerance": 0.07,
+  "omega_m": 0.3,
+  "input_target_rows": 130,
+  "valid_targets": 130,
+  "input_tracer_rows": 1641,
+  "valid_tracers": 1641,
+  "matched_targets": 91,
+  "yield_percent": 70.0,
+  "distinct_catalogue_rows": 182,
+  "distinct_physical_ids": null,
+  "tracer_id_column": null,
+  "uniqueness": "row",
+  "enforce_tracer_order": true,
+  "candidate_triplets_or_pairs": 660039,
+  "variables": 29628,
+  "constraints": 1736,
+  "nonzeros": 59256,
+  "formulation": "compact",
+  "solver": {
+    "maximum_cardinality": 91,
+    "secondary_cost": 0.038805560520909665,
+    "stages": [
+      {
+        "name": "maximum_cardinality",
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.217877100003534,
+        "mip_gap": 0.0,
+        "dual_bound": -91.0,
+        "objective": -91.0
+      },
+      {
+        "name": "minimum_mismatch",
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.2273635000019567,
+        "mip_gap": 0.0,
+        "dual_bound": 7.920067996177461,
+        "objective": 7.920067996177461
+      }
+    ],
+    "optimal": true,
+    "canonicalization": {
+      "rule": "none",
+      "cost_tolerance": 1e-12,
+      "steps": 0,
+      "seconds": 0.0,
+      "second_stage_cost": 0.038805560520909665,
+      "cost_change": 0.0
+    }
+  },
+  "mean_relative_comoving_error": 0.00655286499873924,
+  "max_relative_comoving_error": 0.06631015823806007,
+  "covariance_kind": "total",
+  "covariance_validation": {
+    "shape": [
+      1820,
+      1820
+    ],
+    "symmetric": true,
+    "psd_checked": true,
+    "minimum_eigenvalue_if_needed": null,
+    "asymmetry_max_abs": 0.0,
+    "asymmetry_relative_to_matrix_max": 0.0,
+    "symmetry_rtol": 1e-06,
+    "roundoff_symmetrized_for_validation": false,
+    "roundoff_correction_applied": false
+  },
+  "target_covariance_validation": null,
+  "covariance_alignment": "explicit_zero_based_index",
+  "cross_probe_assumption": "not_assembled",
+  "observable_notes": [
+    "DL covariance uses a fixed calibration/absolute magnitude; additional calibration nuisance uncertainty must be supplied by the scientific analysis."
+  ],
+  "matrix_order": "all lens-role SN, then all source-role SN",
+  "timing_seconds": {
+    "load_validate": 0.11208830001123715,
+    "candidate_or_greedy": 0.013962999990326352,
+    "milp_solve": 0.4474523999961093,
+    "export": 0.08910329999343958,
+    "plots": 1.0999938240274787e-06,
+    "total": 0.6977501000073971
+  },
+  "environment": {
+    "python": "3.12.12",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "platform": "Windows-10-10.0.19045-SP0"
+  },
+  "configuration": {
+    "file_paths": {
+      "tracer": "${REPOSITORY_ROOT}\\reproduction\\des_quality_catalogue.csv",
+      "obj": "${REPOSITORY_ROOT}\\codeanddata\\130sgls2.CSV",
+      "covariance": "${REPOSITORY_ROOT}\\reproduction\\des_covariance.npy"
+    },
+    "col_cfg": {
+      "tracer_z_col": "zHD",
+      "z1_col": "zl",
+      "z2_col": "zs",
+      "cov_index_col": "Index",
+      "mu_col": "MU"
+    },
+    "params": {
+      "tol": 0.07,
+      "wm": 0.3,
+      "unique_by": "row",
+      "tie_break": "none",
+      "plots": false,
+      "require_covariance": true,
+      "output_dir": "${REPOSITORY_ROOT}\\reproduction\\match_tol07"
+    }
+  },
+  "inputs": {
+    "tracer": {
+      "path": "${REPOSITORY_ROOT}\\reproduction\\des_quality_catalogue.csv",
+      "sha256": "69baaedc700d789e39d76fc5b2038aed835a7e264925f899728ec42f7b1dbd44"
+    },
+    "obj": {
+      "path": "${REPOSITORY_ROOT}\\codeanddata\\130sgls2.CSV",
+      "sha256": "5894d9ef542a9bc02ecbb0481db76d6496fe630f4cbaeb9b2d8e2e2f2cbc8215"
+    },
+    "covariance": {
+      "path": "${REPOSITORY_ROOT}\\reproduction\\des_covariance.npy",
+      "sha256": "1ece4bd0d9662267edc38678e91ea51f477c75e2984ad2ae0efeb21b4ab12888"
+    }
+  }
+}

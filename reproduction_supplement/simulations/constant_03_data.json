@@ -1,0 +1,44 @@
+{
+  "name": "constant_03",
+  "data_seed": 20261102,
+  "N_lenses": 88,
+  "labels": [
+    "Omega_k",
+    "gamma0",
+    "gamma_z",
+    "beta",
+    "scatter"
+  ],
+  "truth": [
+    0.0,
+    2.05,
+    0.0,
+    0.0,
+    0.11
+  ],
+  "fiducial_FLRW": {
+    "Omega_m": 0.3,
+    "Omega_k": 0.0,
+    "H0_km_s_Mpc": 70.0
+  },
+  "truth_redshifts": "actual target lens/source redshifts, not noisy SN redshifts",
+  "fixed_design": "actual 88-lens redshifts, slopes delta, apertures, Einstein radii and velocity errors",
+  "SN_factor": "full selected 176x176 covariance plus the main analysis independent mismatch envelope",
+  "SN_mean": "coherent fiducial FLRW truth plus one full-covariance Gaussian noise realization",
+  "velocity_factor": "independent Gaussian with variance dsigma^2 + (scatter*sigma_truth)^2",
+  "CMB_geometric_lower": -0.09405370006986057,
+  "gamma_z_bounds": [
+    -0.5,
+    0.5
+  ],
+  "finite_loglike_at_noiseless_distance_truth": -433.50796568863285,
+  "minimum_covariance_eigenvalue": 0.0057364017806127016,
+  "maximum_velocity_truth_crosscheck_relative_error": 3.885780586188048e-15,
+  "limitations": [
+    "Fixed-design conditional likelihood check; matching and survey selection are held fixed.",
+    "Uses the assumed main Gaussian SN factor, including its symmetric mismatch envelope.",
+    "Uses exactly the assumed P2 velocity model; cannot validate omitted galaxy physics.",
+    "A few noise realizations do not estimate frequentist coverage or population selection bias.",
+    "CMB and gamma priors can shift posterior medians even for correctly generated data."
+  ]
+}

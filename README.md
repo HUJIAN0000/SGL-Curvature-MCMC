@@ -1,47 +1,83 @@
 # SGL-Curvature-MCMC
-A precision cosmology pipeline for constraining cosmic curvature ($\Omega_k$) and lens density evolution ($\gamma_z$) through SGL dual-method cross-validation, featuring full non-diagonal covariance propagation and Jacobian broadcasting.
-### ⚠️ Important: Data Preparation
-Due to GitHub's file size limitations, the pre-computed forward covariance matrix **`DES_Dovekie_CovTotal.txt`** is provided in a compressed ZIP format (`DES_Dovekie_CovTotal.zip`). 
 
-**Before running the MCMC analysis, please:**
-1. Unzip `DES_Dovekie_CovTotal.zip`.
-2. Ensure the extracted `DES_Dovekie_CovTotal.txt` is placed in the same directory as the Python scripts.
+Code, observational inputs, saved numerical summaries, and **all six figures** for the prepared v10 revision of *Joint Inference of Cosmic Curvature and Lens Density-Slope Evolution with Full Supernova Covariance and a CMB Geometric Constraint*.
 
-## 📂 Repository Structure & File Descriptions
+Authors: Jian Hu, Yi Liu, Chen Wang, Jian-Ping Hu, Jia Zhao, and Liangqing Zhu.
 
-This repository contains the complete codebase and datasets required to reproduce the MCMC dual cross-validation analysis presented in our paper.
+[中文说明](README_zh.md) · [All figures](figures/README.md) · [Code/result map](docs/RESULT_MAP.md)
 
-### 💻 1. Core Python Scripts (`/scripts`)
+## Main posterior triangle — Figure 2
 
-* **`run_dual_validation.py`**
-    * **Description:** The main MCMC sampling script. It simultaneously runs the DES-Dovekie Exact Pairing framework (with full non-diagonal covariance Jacobian broadcasting) and the Union3 Gaussian Process baseline.
-    * **Output:** Generates the posterior chains and the final contour plots (`figure01.pdf`).
-* **`generate_dovekie_cov.py`**
-    * **Description:** An ultra-fast CPU script utilizing Cholesky decomposition (via SciPy/MKL) to invert the $1820 \times 1820$ compressed precision matrix into the forward covariance matrix (`DES_Dovekie_CovTotal.txt`) in less than 0.1 seconds.
-* **`generate_dovekie_cov_gpu.py`** *(Optional)*
-    * **Description:** A GPU-accelerated alternative using CuPy for matrix reconstruction and inversion.
-* **`verify_matrix.py`**
-    * **Description:** A mathematical validation script that computes the dot product of the reconstructed covariance matrix and its original inverse to ensure numerical stability (verifying $C^{-1} \cdot C = I$ to a precision of $< 10^{-8}$).
-* **`kstest01.py`**
-    * **Description:** Performs the Kolmogorov-Smirnov (K-S) test to statistically prove that the 92 matched exact-pairing samples have no selection bias relative to the original parent sample.
-* **`cosmo_tools.py`**
-    * **Description:** Utility module containing functions for corner plot generation (via `getdist`) and chain statistics calculation.
-* **`CosmoMatcher_v1.0.py`**
-    * **Description:** A specialized preprocessing engine that implements the **Mixed-Integer Linear Programming (MILP)** matching pipeline (Algorithm 1 in our paper). It performs high-precision, one-to-one cross-matching between Strong Gravitational Lensing (SGL) systems and Type Ia Supernovae (SNe Ia) to minimize redshift residuals and ensure the validity of the "Exact Pairing" framework.
-    * **Key Feature:** Unlike traditional nearest-neighbor searches, this script treats the matching process as a global optimization problem, significantly reducing systematic biases in cosmic distance measurements.
+The main triangle is included as the original [vector PDF](figures/fig_triangle.pdf) and a [PNG preview](figures/fig_triangle.png). Its PDF is byte-identical to Figure 2 in the prepared v10 manuscript.
 
-### 📊 2. Datasets (`/data`)
+![Figure 2: DES and Union3 posterior comparison](figures/fig_triangle.png)
 
-*(Note: Ensure all data files are placed in the same directory as the scripts before running, or update the file paths accordingly.)*
+## Contents
 
-**Main SGL & SN Ia Data:**
-* **`matched_sgls_milp_dd.csv`**: The rigorously matched DES-Dovekie Exact Pairing sample catalog.
-* **`130sgls2.CSV`**: The parent catalog of 130 Strong Gravitational Lenses used for the Union3 GP baseline.
-* **`lcparam_full.txt` & `mag_covmat.txt`**: The original Union3 Type Ia Supernovae light-curve parameters and covariance matrix.
+| Location | Contents |
+|---|---|
+| `figures/` | All six manuscript figures, original PDFs and PNG previews |
+| `codeanddata/` | 130-lens catalog, 1820-row DES-Dovekie Hubble diagram, packed full precision matrix, Union3 nodes/covariance, and legacy comparison inputs |
+| `addcode/` | CosmoMatcher v1.4.3 assignment engine and plotting utilities |
+| `reproduction/` | Likelihoods, physical priors, nonlinear sampler, and frozen matching outputs |
+| `reproduction_physical/` | Primary and comparison fit summaries |
+| `reproduction_supplement/` | Sensitivity, simulation, target-redshift, residual, and curvature-leverage code and saved diagnostics |
+| `provenance/` | Input/figure inventories, checksums, and registry of the 28 saved analyses |
+| `tests/` | Numerical checks of dynamics, distance derivatives, normalization, and CMB geometry |
 
-**DES-Dovekie Covariance Matrices:**
-* **`covtot_inv_000.npz`**: The compressed 1D array of the upper-triangle inverse precision matrix for the SGL parameters.
-* **`cov_sgls_milp_dd_lens.txt`**: The lens redshift covariance block.
-* **`cov_sgls_milp_dd_source.txt`**: The source redshift covariance block.
-* **`cov_sgls_milp_dd_cross.txt`**: The cross-covariance block between lenses and sources.
-* **`DES_Dovekie_CovTotal.zip`**: The generated full $1820 \times 1820$ forward covariance matrix (generated by running generate_dovekie_cov.py). Note: This ZIP archive must be extracted to obtain the .txt file, which should be placed in the same directory as the codebase for the scripts to run correctly.`).
+## Included inputs; omitted chains
+
+**No MCMC parameter chains or latent-distance chain arrays are included.** Figure PDFs, PNG previews, summary JSON files, diagnostic tables, and analysis code are included. Viewing the figures requires no sampling or chain download.
+
+The derived dense DES covariance `reproduction/des_covariance.npy` is also omitted: it is a reproducible data cache, not an MCMC chain. Reconstruct it from the included `codeanddata/covtot_inv_000.npz` with the preparation command below. The full precision matrix is inverted **before** selecting the 176 SN rows.
+
+This is a prepared upload package. It does not assert that a GitHub release or Zenodo version DOI has already been published. Manuscript source and PDF are not included in this code/data upload.
+
+## Verify without chains
+
+Use a Python environment with the dependencies in `requirements.txt` / `environment.yml`. The pinned file records the reference environment; see `docs/REPRODUCING.md` for numerical portability.
+
+```bash
+python reproduce.py prepare
+python reproduce.py verify
+python -m unittest discover -s tests -v
+python reproduce.py matching
+```
+
+These reconstruct the full covariance, verify file hashes and saved summaries, evaluate reference likelihoods, run numerical checks, and rerun the primary two-stage matching. They do **not** resample the posterior or verify posterior quantiles from chains.
+
+## Sampling and chain-dependent postprocessing
+
+Full production sampling code is retained:
+
+```bash
+python reproduce.py sample --cases base,soft07,lens_noise,beta_prior,delta_plus,delta_minus,gzwide
+python reproduce.py sample --kind linear --cases base,diagonal,nomismatch,transfer,union_same,union_all --steps 12000
+python reproduce.py sensitivity
+python reproduce.py simulate
+```
+
+Sampling writes to new workspaces under `outputs/`. The primary model fixes H0=70 and applies the external CMB condition and reference evolution prior; the lower-level `inference.Model` alone does not define that primary external condition.
+
+`verify --chains`, `figures`, `diagnostics`, `exact-redshift`, and recomputing posterior correlations with `curvature_leverage.py` require saved chains (including baseline latent states for some commands). Their code and reference outputs are included, but those arrays are not. The restore command accepts a separately obtained historical `saved_chains_apj_v6_20261025.zip`; no public download for that archive is claimed here. See [the reproduction guide](docs/REPRODUCING.md).
+
+## Interpretation
+
+The curvature interval is conditional on the CMB geometric bound and lens-population prior. The lens kinematic curvature response is weak, and the source-redshift residual trend persists under the tested distance prescriptions. Six fixed-design simulations are model diagnostics, not a frequentist coverage calibration. DES and Union3 share lenses and are not independent constraints.
+
+## All manuscript figures
+
+| Figure | Description | Original PDF | Preview |
+|---|---|---|---|
+| 1 | Curvature and slope-evolution posterior CDFs | [PDF](figures/fig_physical_posteriors.pdf) | [PNG](figures/fig_physical_posteriors.png) |
+| 2 | Main posterior triangle: DES and Union3 comparison | [PDF](figures/fig_triangle.pdf) | [PNG](figures/fig_triangle.png) |
+| 3 | Source-redshift residual trend | [PDF](figures/fig_source_trend.pdf) | [PNG](figures/fig_source_trend.png) |
+| 4 | Alternative distance prescriptions | [PDF](figures/fig_exact_redshift.pdf) | [PNG](figures/fig_exact_redshift.png) |
+| 5 | Assignment and sample comparison | [PDF](figures/fig_matching.pdf) | [PNG](figures/fig_matching.png) |
+| 6 | Six fixed-design simulations | [PDF](figures/fig_mock_recovery.pdf) | [PNG](figures/fig_mock_recovery.png) |
+
+## License and attribution
+
+Original project software uses the MIT License. Survey data and AAS style files retain their upstream terms; see [LICENSE_SCOPE.md](LICENSE_SCOPE.md) and [data sources](codeanddata/DATA_SOURCES.md). Creator metadata is in `CITATION.cff` and `addcode/CosmoMatcher_CITATION.cff`. Those prepared metadata do not imply publication or archival DOI completion.
+
+Duplicate derived covariance text exports are omitted; all raw inputs, matching maps, summaries and generating code are retained.

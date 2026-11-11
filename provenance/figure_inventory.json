@@ -1,0 +1,50 @@
+[
+  {
+    "figure": 1,
+    "caption": "Curvature and slope-evolution posterior CDFs",
+    "pdf": "figures/fig_physical_posteriors.pdf",
+    "png": "figures/fig_physical_posteriors.png",
+    "sha256_pdf": "c7e629e51f3226749a4fd92c78d370657cb53eab07c8e886a402b7b4d1356541",
+    "source_manuscript_file": "paper/fig_physical_posteriors.pdf"
+  },
+  {
+    "figure": 2,
+    "caption": "Main posterior triangle: DES and Union3 comparison",
+    "pdf": "figures/fig_triangle.pdf",
+    "png": "figures/fig_triangle.png",
+    "sha256_pdf": "2adac9255cb6fe71ac6fd7e756d884e22977575da93bf24f081c63fd4f801f41",
+    "source_manuscript_file": "paper/fig_triangle.pdf"
+  },
+  {
+    "figure": 3,
+    "caption": "Source-redshift residual trend",
+    "pdf": "figures/fig_source_trend.pdf",
+    "png": "figures/fig_source_trend.png",
+    "sha256_pdf": "e73a12a32fc5cd7d1f33238865df213022e646492a7e7cffb10aa55801b9cfb2",
+    "source_manuscript_file": "paper/fig_source_trend.pdf"
+  },
+  {
+    "figure": 4,
+    "caption": "Alternative distance prescriptions",
+    "pdf": "figures/fig_exact_redshift.pdf",
+    "png": "figures/fig_exact_redshift.png",
+    "sha256_pdf": "95615f3734684931232e4c1f34112c841e9c6d8da60704d236034a5ff45cefbc",
+    "source_manuscript_file": "paper/fig_exact_redshift.pdf"
+  },
+  {
+    "figure": 5,
+    "caption": "Assignment and sample comparison",
+    "pdf": "figures/fig_matching.pdf",
+    "png": "figures/fig_matching.png",
+    "sha256_pdf": "561bba8c2e5700e0ec02539f183f56e9540bcab61d75b61ac0b067ecb389eafe",
+    "source_manuscript_file": "paper/fig_matching.pdf"
+  },
+  {
+    "figure": 6,
+    "caption": "Six fixed-design simulations",
+    "pdf": "figures/fig_mock_recovery.pdf",
+    "png": "figures/fig_mock_recovery.png",
+    "sha256_pdf": "c3eb18bda45aa08ab98399d5e9efdc0dd48b5ac820d2e8bb931793b0331c36c0",
+    "source_manuscript_file": "paper/fig_mock_recovery.pdf"
+  }
+]

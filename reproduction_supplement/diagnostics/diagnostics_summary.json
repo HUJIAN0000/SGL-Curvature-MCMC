@@ -1,0 +1,419 @@
+{
+  "method_version": "1.0",
+  "gamma_evolution": {
+    "base": {
+      "gamma_at_z0p6_percentiles": {
+        "2.275": 1.588327121337045,
+        "15.865": 1.6910569442853352,
+        "50": 1.7896889684261488,
+        "84.135": 1.876046762387893,
+        "97.725": 1.95391713429229
+      },
+      "P_gamma_z_less_than_zero_conditional_on_model_and_prior": 0.9873475632621836,
+      "gamma0_gamma_z_correlation": -0.4186902818797953,
+      "sampled_lens_redshift_range": [
+        0.0625,
+        0.564
+      ],
+      "bands": "Pointwise joint-posterior credible bands, not simultaneous bands; extrapolation outside observed lens redshifts."
+    },
+    "gzwide": {
+      "gamma_at_z0p6_percentiles": {
+        "2.275": 1.4451374792621265,
+        "15.865": 1.5434882336872042,
+        "50": 1.6335922252918311,
+        "84.135": 1.7213803410721997,
+        "97.725": 1.8236562101759253
+      },
+      "P_gamma_z_less_than_zero_conditional_on_model_and_prior": 0.9995687521562392,
+      "gamma0_gamma_z_correlation": -0.41140571776560453,
+      "sampled_lens_redshift_range": [
+        0.0625,
+        0.564
+      ],
+      "bands": "Pointwise joint-posterior credible bands, not simultaneous bands; extrapolation outside observed lens redshifts."
+    }
+  },
+  "posterior_predictive": {
+    "N_lenses": 88,
+    "posterior_joint_states": 2664,
+    "joint_states_per_chain": 666,
+    "saved_iteration_first_last_stride": [
+      33400,
+      99900,
+      100
+    ],
+    "theta_mu_alignment": "Exact same chain and iteration; theta is stored after the accepted elliptical latent-distance update.",
+    "conditional_replications_per_state": 32,
+    "total_replicated_datasets": 85248,
+    "seed": 20261021,
+    "max_absolute_vectorized_loglike_discrepancy": 2.8421709430404007e-13,
+    "input_sha256": {
+      "reproduction_physical\\nonlinear_base_summary.json": "d6ff4619089c4aaa7ecdb8799875965c74e0a363dbbacd242357645894b004d2",
+      "reproduction_physical\\nonlinear_base_chains.npy": "7338c9c418a95b5f5f7c0337960627bfdfca9d94d4df312f7400e47050b80dde",
+      "reproduction_physical\\nonlinear_base_mu.npy": "b663f837b2288fdb657c93b494e07e11772ba8a4d0ad67adb8346400a51068bc"
+    },
+    "conditional_model": "sigma_obs_i ~ Normal(sigma_model_i(theta, mu), dsigma_ap_i^2 + (scatter*sigma_model_i)^2); mu drawn from the fitted joint posterior with full SN covariance and the assumed mismatch envelope.",
+    "prediction_intervals": "Central pointwise posterior intervals; velocity predictive intervals include conditional measurement plus intrinsic scatter.",
+    "checks": [
+      {
+        "discrepancy": "standardized_residual_sum_squares",
+        "posterior_predictive_probability_rep_ge_observed": 0.4346260322822823,
+        "observed_discrepancy_q16_median_q84": [
+          78.21255638452251,
+          90.66728183026589,
+          104.33468031606168
+        ],
+        "replicated_discrepancy_q16_median_q84": [
+          74.75640924790409,
+          87.34410511109411,
+          101.18643766303097
+        ],
+        "chainwise_posterior_predictive_probabilities": [
+          0.4293825075075075,
+          0.4202327327327327,
+          0.44655593093093093,
+          0.44233295795795796
+        ]
+      },
+      {
+        "discrepancy": "maximum_absolute_standardized_residual",
+        "posterior_predictive_probability_rep_ge_observed": 0.12576248123123124,
+        "observed_discrepancy_q16_median_q84": [
+          2.9585829780044977,
+          3.321790695275073,
+          3.710232987475112
+        ],
+        "replicated_discrepancy_q16_median_q84": [
+          2.313378980188414,
+          2.657649143360924,
+          3.091915405208789
+        ],
+        "chainwise_posterior_predictive_probabilities": [
+          0.12293543543543543,
+          0.12134009009009009,
+          0.13170983483483484,
+          0.12706456456456455
+        ]
+      },
+      {
+        "discrepancy": "absolute_standardized_residual_mean",
+        "posterior_predictive_probability_rep_ge_observed": 0.48073855105105107,
+        "observed_discrepancy_q16_median_q84": [
+          0.22858173664622305,
+          0.7286543787879007,
+          1.4861960508648158
+        ],
+        "replicated_discrepancy_q16_median_q84": [
+          0.20178035871028746,
+          0.6742767575358766,
+          1.4114216690360715
+        ],
+        "chainwise_posterior_predictive_probabilities": [
+          0.4879410660660661,
+          0.47874436936936937,
+          0.455518018018018,
+          0.5007507507507507
+        ]
+      },
+      {
+        "discrepancy": "absolute_residual_trend_lens_redshift",
+        "posterior_predictive_probability_rep_ge_observed": 0.04218280780780781,
+        "observed_discrepancy_q16_median_q84": [
+          1.7499659144861355,
+          2.247757404325778,
+          2.811046301319412
+        ],
+        "replicated_discrepancy_q16_median_q84": [
+          0.1981882243549382,
+          0.6722459015164433,
+          1.4066643888776862
+        ],
+        "chainwise_posterior_predictive_probabilities": [
+          0.04063438438438438,
+          0.03908596096096096,
+          0.04222972972972973,
+          0.046781156156156155
+        ]
+      },
+      {
+        "discrepancy": "absolute_residual_trend_source_redshift",
+        "posterior_predictive_probability_rep_ge_observed": 0.0017947635135135136,
+        "observed_discrepancy_q16_median_q84": [
+          2.9469080774593395,
+          3.446738450323034,
+          3.962873351821388
+        ],
+        "replicated_discrepancy_q16_median_q84": [
+          0.1991962265810235,
+          0.6745214343942044,
+          1.4126842831295243
+        ],
+        "chainwise_posterior_predictive_probabilities": [
+          0.0021114864864864866,
+          0.0013607357357357356,
+          0.0014545795795795795,
+          0.0022522522522522522
+        ]
+      },
+      {
+        "discrepancy": "absolute_residual_trend_log_effective_angular_radius",
+        "posterior_predictive_probability_rep_ge_observed": 0.4812077702702703,
+        "observed_discrepancy_q16_median_q84": [
+          0.317834215795397,
+          0.740963802534343,
+          1.22526237896743
+        ],
+        "replicated_discrepancy_q16_median_q84": [
+          0.2008326466720258,
+          0.6749949032331999,
+          1.4053569807532424
+        ],
+        "chainwise_posterior_predictive_probabilities": [
+          0.4888795045045045,
+          0.47353603603603606,
+          0.48001126126126126,
+          0.48240427927927926
+        ]
+      },
+      {
+        "discrepancy": "absolute_residual_trend_log_einstein_angular_radius",
+        "posterior_predictive_probability_rep_ge_observed": 0.21845673798798798,
+        "observed_discrepancy_q16_median_q84": [
+          0.740294814338755,
+          1.5528707006691125,
+          2.287416398974541
+        ],
+        "replicated_discrepancy_q16_median_q84": [
+          0.20035807396894856,
+          0.6770981113647719,
+          1.4066842216592075
+        ],
+        "chainwise_posterior_predictive_probabilities": [
+          0.2155123873873874,
+          0.21326013513513514,
+          0.22696133633633633,
+          0.2180930930930931
+        ]
+      },
+      {
+        "discrepancy": "absolute_residual_trend_log_aperture_over_effective_radius",
+        "posterior_predictive_probability_rep_ge_observed": 0.6778106231231231,
+        "observed_discrepancy_q16_median_q84": [
+          0.1160593725316323,
+          0.3777807041837308,
+          0.7810980187644608
+        ],
+        "replicated_discrepancy_q16_median_q84": [
+          0.2023641463610075,
+          0.6747157344311039,
+          1.410174497542565
+        ],
+        "chainwise_posterior_predictive_probabilities": [
+          0.6750656906906907,
+          0.6756287537537538,
+          0.6792886636636637,
+          0.6812593843843844
+        ]
+      },
+      {
+        "discrepancy": "absolute_residual_trend_log_einstein_over_effective_radius",
+        "posterior_predictive_probability_rep_ge_observed": 0.17567567567567569,
+        "observed_discrepancy_q16_median_q84": [
+          0.926059269105586,
+          1.6667056877062212,
+          2.407146989454604
+        ],
+        "replicated_discrepancy_q16_median_q84": [
+          0.19992452514462347,
+          0.6741337529726339,
+          1.4071785540805795
+        ],
+        "chainwise_posterior_predictive_probabilities": [
+          0.18304241741741742,
+          0.16943506006006007,
+          0.17497184684684686,
+          0.17525337837837837
+        ]
+      },
+      {
+        "discrepancy": "maximum_absolute_trend_over_six_fixed_predictors",
+        "posterior_predictive_probability_rep_ge_observed": 0.008399024024024024,
+        "observed_discrepancy_q16_median_q84": [
+          2.9490249356220555,
+          3.448230738206294,
+          3.962873351821388
+        ],
+        "replicated_discrepancy_q16_median_q84": [
+          0.889050973896428,
+          1.411136175464249,
+          2.0597353134610175
+        ],
+        "chainwise_posterior_predictive_probabilities": [
+          0.00830518018018018,
+          0.006991366366366367,
+          0.008868243243243243,
+          0.009431306306306307
+        ]
+      },
+      {
+        "discrepancy": "survey_mean_contrast_sum_squares",
+        "posterior_predictive_probability_rep_ge_observed": 0.2561936936936937,
+        "observed_discrepancy_q16_median_q84": [
+          1.7647105124223281,
+          2.942346300249931,
+          4.670260162514718
+        ],
+        "replicated_discrepancy_q16_median_q84": [
+          0.34217920703463145,
+          1.3907911003020526,
+          3.6792288359025593
+        ],
+        "chainwise_posterior_predictive_probabilities": [
+          0.2572728978978979,
+          0.2521114864864865,
+          0.25544294294294295,
+          0.25994744744744747
+        ]
+      },
+      {
+        "discrepancy": "absolute_group_mean_BELLS",
+        "posterior_predictive_probability_rep_ge_observed": 0.2893674924924925,
+        "observed_discrepancy_q16_median_q84": [
+          0.6386665097090664,
+          1.187807094223403,
+          1.7442372761764893
+        ],
+        "replicated_discrepancy_q16_median_q84": [
+          0.1990721187381144,
+          0.6707713192408296,
+          1.4021736117989463
+        ],
+        "chainwise_posterior_predictive_probabilities": [
+          0.2864114114114114,
+          0.28505067567567566,
+          0.28838213213213215,
+          0.29762575075075076
+        ]
+      },
+      {
+        "discrepancy": "absolute_group_mean_S4TM",
+        "posterior_predictive_probability_rep_ge_observed": 0.6365427927927928,
+        "observed_discrepancy_q16_median_q84": [
+          0.12889728010479698,
+          0.43039911458248103,
+          0.914256834663162
+        ],
+        "replicated_discrepancy_q16_median_q84": [
+          0.20141362378456723,
+          0.6750171116943591,
+          1.419462463282721
+        ],
+        "chainwise_posterior_predictive_probabilities": [
+          0.6290822072072072,
+          0.6361674174174174,
+          0.6367304804804805,
+          0.644191066066066
+        ]
+      },
+      {
+        "discrepancy": "absolute_group_mean_SLACS",
+        "posterior_predictive_probability_rep_ge_observed": 0.31014217342342343,
+        "observed_discrepancy_q16_median_q84": [
+          0.46301094132241627,
+          1.2320373470165615,
+          2.02896200445931
+        ],
+        "replicated_discrepancy_q16_median_q84": [
+          0.2029986959758755,
+          0.6782593470207681,
+          1.411813884860172
+        ],
+        "chainwise_posterior_predictive_probabilities": [
+          0.31024774774774777,
+          0.3082301051051051,
+          0.3120777027027027,
+          0.31001313813813813
+        ]
+      }
+    ],
+    "surveys": {
+      "BELLS": 11,
+      "S4TM": 29,
+      "SLACS": 48
+    },
+    "five_smallest_local_tail_probabilities": [
+      {
+        "Lens name": "SDSSJ1352+3216",
+        "posterior_mean_conditional_two_sided_tail_probability": 0.002382868958688155,
+        "standardized_residual_median": -3.2820926675831115
+      },
+      {
+        "Lens name": "SDSSJ0737+3216",
+        "posterior_mean_conditional_two_sided_tail_probability": 0.025784212966971448,
+        "standardized_residual_median": 2.630340738662924
+      },
+      {
+        "Lens name": "SDSSJ1100+5329",
+        "posterior_mean_conditional_two_sided_tail_probability": 0.030850292114295755,
+        "standardized_residual_median": -2.238915018301566
+      },
+      {
+        "Lens name": "SDSSJ0252+0039",
+        "posterior_mean_conditional_two_sided_tail_probability": 0.049710588488210916,
+        "standardized_residual_median": -2.023160781468272
+      },
+      {
+        "Lens name": "SDSSJ1106+5228",
+        "posterior_mean_conditional_two_sided_tail_probability": 0.052562846718805956,
+        "standardized_residual_median": 2.0866696696360076
+      }
+    ],
+    "source_redshift_trend_detail": {
+      "signed_score_definition": "sum_i (z_s,i - mean(z_s))*r_i / sqrt(sum_i (z_s,i - mean(z_s))^2); r_i=(sigma_obs-sigma_model)/sqrt(dsigma_ap^2+(scatter*sigma_model)^2).",
+      "direction": "negative",
+      "signed_observed_score_q16_median_q84": [
+        -3.9628733518213886,
+        -3.4467384503230334,
+        -2.9469080774593395
+      ],
+      "each_single_point_omission_predictive_probability_min_max_no_refit": [
+        0.0010440127627627629,
+        0.007671734234234234
+      ],
+      "point_whose_omission_most_reduces_discrepancy": {
+        "Lens name": "SDSSJ1352+3216",
+        "Survey name": "BELLS",
+        "zl": 0.463,
+        "zs": 1.034,
+        "sigma_ap": 161,
+        "dsigma_ap": 21,
+        "source_z_centered_normalized_weight": 0.16156546811187852,
+        "signed_trend_contribution_median": -0.5302728382246296,
+        "standardized_residual_median": -3.2820926675831115,
+        "omit_this_lens_predictive_probability_no_refit": 0.007671734234234234,
+        "omitted_signed_trend_median_no_refit": -2.9399189347938472
+      },
+      "clipped_at_abs_r2_source_trend_predictive_probability": 0.0031554992492492493,
+      "gzwide_source_trend_predictive_probability": 0.009079391891891891,
+      "gzwide_signed_score_q16_median_q84": [
+        -3.4783511720902762,
+        -2.912990683733422,
+        -2.3890702247951228
+      ],
+      "latent_source_mu_shift_from_SN_mean_median_range_mag": [
+        -0.2576365715429212,
+        0.15048230335855806
+      ],
+      "caveat": "Single-point omission recomputes the discrepancy on the existing full-data posterior only; it is NOT leave-one-out prediction, influence reweighting, or a refit. Clipping is a descriptive post-hoc robustness check. No causal mechanism is identified."
+    },
+    "interpretation": [
+      "Posterior predictive probabilities reuse the fitted data and are not calibrated frequentist p-values or independent model validation.",
+      "The examined residual trends are descriptive checks, with correlated predictors and no multiplicity-adjusted discovery claim.",
+      "Small or large values indicate a mismatch for the chosen discrepancy, rather than a unique physical cause.",
+      "Latent distances have been updated using the same lens velocities; this is an in-sample conditional check, not a held-out prediction.",
+      "Angular radii and their ratios are observed fixed predictors; no physical-size inference is substituted for these quantities.",
+      "Monte Carlo counts are not effective posterior sample sizes; chainwise probabilities are supplied to assess stability."
+    ]
+  }
+}

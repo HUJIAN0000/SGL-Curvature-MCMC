@@ -1,0 +1,90 @@
+[
+  {
+    "case": "signed_envelope",
+    "N_lenses": 88,
+    "joint_states": 2664,
+    "source_redshift_PPC_analytic": 0.0025471153787135644,
+    "source_redshift_signed_score_median": -3.371515111471744,
+    "partial_source_redshift_PPC_analytic": 0.01214275694624582,
+    "overall_squared_residual_PPC_analytic": 0.43511417526636664,
+    "Omega_quantiles": [
+      -0.04273380272002891,
+      0.1152626045934829,
+      0.48835788605920366
+    ],
+    "gamma_z_quantiles": [
+      -0.4779497382583127,
+      -0.41367764559935216,
+      -0.27593776617836757
+    ],
+    "max_Rhat": 1.000361672353979,
+    "min_ESS": 7441.889979465344,
+    "interpretation": "In-sample posterior-predictive probability under this specified distance assignment; not a frequentist p-value or an independent validation."
+  },
+  {
+    "case": "signed_no_envelope",
+    "N_lenses": 88,
+    "joint_states": 2664,
+    "source_redshift_PPC_analytic": 0.002439879311409591,
+    "source_redshift_signed_score_median": -3.383154529870456,
+    "partial_source_redshift_PPC_analytic": 0.011723193718703999,
+    "overall_squared_residual_PPC_analytic": 0.44629796147075107,
+    "Omega_quantiles": [
+      -0.04313083409503016,
+      0.11571630215199698,
+      0.4869832749465571
+    ],
+    "gamma_z_quantiles": [
+      -0.4787430402329432,
+      -0.4139228299222273,
+      -0.2779788901585767
+    ],
+    "max_Rhat": 1.0007245572211139,
+    "min_ESS": 6928.054421271874,
+    "interpretation": "In-sample posterior-predictive probability under this specified distance assignment; not a frequentist p-value or an independent validation."
+  },
+  {
+    "case": "gp_log",
+    "N_lenses": 88,
+    "joint_states": 2664,
+    "source_redshift_PPC_analytic": 0.0014088580210967804,
+    "source_redshift_signed_score_median": -3.5038508213303228,
+    "partial_source_redshift_PPC_analytic": 0.004106873563291689,
+    "overall_squared_residual_PPC_analytic": 0.41580577727226825,
+    "Omega_quantiles": [
+      -0.03766123745400124,
+      0.13533065945954004,
+      0.5330621113786765
+    ],
+    "gamma_z_quantiles": [
+      -0.4791916291115481,
+      -0.41895959845655667,
+      -0.2936146809046908
+    ],
+    "max_Rhat": 1.0003018394477072,
+    "min_ESS": 13348.971599637702,
+    "interpretation": "In-sample posterior-predictive probability under this specified distance assignment; not a frequentist p-value or an independent validation."
+  },
+  {
+    "case": "gp_fid",
+    "N_lenses": 88,
+    "joint_states": 2664,
+    "source_redshift_PPC_analytic": 0.0012445184981627433,
+    "source_redshift_signed_score_median": -3.5424813116577543,
+    "partial_source_redshift_PPC_analytic": 0.003855966136942239,
+    "overall_squared_residual_PPC_analytic": 0.41635371889575534,
+    "Omega_quantiles": [
+      -0.039626476287178455,
+      0.12732918641249003,
+      0.514835818278181
+    ],
+    "gamma_z_quantiles": [
+      -0.47949325503758283,
+      -0.4180804147934953,
+      -0.2926815775114805
+    ],
+    "max_Rhat": 1.0002720486207557,
+    "min_ESS": 13512.729756848088,
+    "interpretation": "In-sample posterior-predictive probability under this specified distance assignment; not a frequentist p-value or an independent validation."
+  }
+]

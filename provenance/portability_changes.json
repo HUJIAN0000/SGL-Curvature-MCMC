@@ -1,0 +1,19 @@
+{
+  "updates": [
+    {
+      "file": "reproduction_supplement/validate_exact_redshift.py",
+      "reason": "Separate exact frozen fit-input hash verification from tolerance-based GP recomputation under BLAS thread differences",
+      "mean_atol_mag": 2e-10,
+      "covariance_atol_mag2": 2e-12
+    },
+    {
+      "file": "addcode/cosmo_tools.py",
+      "reason": "Standardize central 68.27% credible interval percentiles to [15.865, 50.0, 84.135] matching all MCMC summary tables"
+    },
+    {
+      "file": "reproduction/physical_prior_revision.py",
+      "reason": "Record explicit mu_saved_indices in newly sampled nonlinear summary JSONs matching supplement_sampler.py"
+    }
+  ],
+  "scientific_inference_changed": false
+}

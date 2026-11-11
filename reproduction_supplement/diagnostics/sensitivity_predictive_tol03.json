@@ -1,0 +1,72 @@
+{
+  "case": "tol03",
+  "N_lenses": 81,
+  "sigma_mu_max": 0.3,
+  "relative_distance_tolerance": 0.03,
+  "joint_states": 2664,
+  "saved_theta_indices_from_summary": true,
+  "saved_indices_first_last": [
+    33400,
+    99900
+  ],
+  "source_redshift_trend": {
+    "signed_observed_score_q16_median_q84": [
+      -3.469150931981819,
+      -2.941585786362926,
+      -2.4354728314687852
+    ],
+    "analytic_posterior_predictive_probability": 0.008739121263552984,
+    "chainwise_analytic_probabilities": [
+      0.008909748919134545,
+      0.009383529438270687,
+      0.007557826155839747,
+      0.009105380540966957
+    ],
+    "conditional_replication_distribution": "Exactly standard normal, given theta and mu; normalized deterministic weights have squared norm one."
+  },
+  "partial_source_redshift_trend": {
+    "signed_observed_score_q16_median_q84": [
+      -2.8391102331183897,
+      -2.391105249002546,
+      -1.938318045226532
+    ],
+    "analytic_posterior_predictive_probability": 0.02919719968735561,
+    "chainwise_analytic_probabilities": [
+      0.02944677149033906,
+      0.03095988742393274,
+      0.02718956997123882,
+      0.029192569863911826
+    ],
+    "conditional_replication_distribution": "Exactly standard normal, given theta and mu; normalized deterministic weights have squared norm one."
+  },
+  "squared_standardized_residual_sum": {
+    "replicate_posterior_predictive_probability": 0.45604588963963966,
+    "analytic_posterior_predictive_probability": 0.45580852515633186,
+    "replicate_chainwise_probabilities": [
+      0.4727383633633634,
+      0.45152965465465467,
+      0.4426614114114114,
+      0.4572541291291291
+    ],
+    "analytic_chainwise_probabilities": [
+      0.46928721114072597,
+      0.452824480316918,
+      0.44168990608582215,
+      0.45943250308186134
+    ],
+    "observed_discrepancy_q16_median_q84": [
+      70.20271397908706,
+      82.24193391143677,
+      95.75267123611961
+    ],
+    "replications_per_state": 32,
+    "conditional_replication_distribution": "Chi-square with n=81; exactly equivalent to generating n independent conditional Gaussian standardized residuals."
+  },
+  "max_absolute_vectorized_loglike_discrepancy": 2.2737367544323206e-13,
+  "hashes": {
+    "nonlinear_summary.json": "62a64bfde9791c8171cee4afbe769e3bde13657c7778ea986335ca8f7dcab06a",
+    "nonlinear_chains.npy": "d5397ab6401d7b722c9f12c13885f6905fc50225fe510570fd41e863c2e5ec4c",
+    "nonlinear_mu.npy": "ec93d6b732e759b05deff5dc1489036e2372825e0c9e2cca2c7659e2101157dd"
+  },
+  "interpretation": "In-sample conditional predictive checks, not held-out or frequentist validation. Source-trend tail uses the exact N(0,1) conditional replicate distribution. Partial trend residualizes fixed zs on intercept, zl and additive survey groups, without causal interpretation. Original posterior states and chains are unchanged."
+}

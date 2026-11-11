@@ -1,0 +1,27 @@
+{
+  "mode": "sgls",
+  "sn_type": "des",
+  "algo": "milp",
+  "tol_type": "dd",
+  "file_paths": {
+    "tracer": "${REPOSITORY_ROOT}\\reproduction_supplement\\sensitivity\\tol07\\selected_supernovae.csv",
+    "obj": "${REPOSITORY_ROOT}\\codeanddata\\130sgls2.CSV",
+    "covariance": "${REPOSITORY_ROOT}\\reproduction\\des_covariance.npy"
+  },
+  "col_cfg": {
+    "tracer_z_col": "zHD",
+    "z1_col": "zl",
+    "z2_col": "zs",
+    "cov_index_col": "Index",
+    "mu_col": "MU"
+  },
+  "params": {
+    "tol": 0.07,
+    "wm": 0.3,
+    "unique_by": "row",
+    "tie_break": "none",
+    "plots": false,
+    "require_covariance": true,
+    "output_dir": "${REPOSITORY_ROOT}\\reproduction_supplement\\sensitivity\\tol07\\matching"
+  }
+}

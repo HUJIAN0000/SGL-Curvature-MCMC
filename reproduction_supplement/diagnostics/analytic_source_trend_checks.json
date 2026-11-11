@@ -1,0 +1,78 @@
+{
+  "primary_raw_source_redshift": {
+    "signed_observed_score_q16_median_q84": [
+      -3.9628733518213886,
+      -3.4467384503230334,
+      -2.9469080774593395
+    ],
+    "analytic_posterior_predictive_probability": 0.0018424721962789843,
+    "chainwise_analytic_probabilities": [
+      0.0019464679106355428,
+      0.0016222529361845618,
+      0.0018240579337498587,
+      0.0019771100045459745
+    ],
+    "conditional_replication_distribution": "Exactly standard normal, given theta and mu; normalized deterministic weights have squared norm one."
+  },
+  "primary_partial_source_redshift": {
+    "signed_observed_score_q16_median_q84": [
+      -3.255156538486571,
+      -2.789170776392668,
+      -2.3420469972298945
+    ],
+    "analytic_posterior_predictive_probability": 0.011328549370971424,
+    "chainwise_analytic_probabilities": [
+      0.01247703763310045,
+      0.010390127433267036,
+      0.0113707483665087,
+      0.011076284051009504
+    ],
+    "conditional_replication_distribution": "Exactly standard normal, given theta and mu; normalized deterministic weights have squared norm one."
+  },
+  "wider_gamma_prior_diagnostic": {
+    "raw_source_redshift": {
+      "signed_observed_score_q16_median_q84": [
+        -3.4783511720902762,
+        -2.912990683733422,
+        -2.3890702247951228
+      ],
+      "analytic_posterior_predictive_probability": 0.009455552340066339,
+      "chainwise_analytic_probabilities": [
+        0.008840583938013328,
+        0.008600815076340999,
+        0.009698662162091358,
+        0.01068214818381967
+      ],
+      "conditional_replication_distribution": "Exactly standard normal, given theta and mu; normalized deterministic weights have squared norm one."
+    },
+    "partial_source_redshift": {
+      "signed_observed_score_q16_median_q84": [
+        -3.3600845364190923,
+        -2.89046769757755,
+        -2.4015607962464296
+      ],
+      "analytic_posterior_predictive_probability": 0.009246672994648115,
+      "chainwise_analytic_probabilities": [
+        0.00884995909150945,
+        0.007931240600921829,
+        0.009411102509037421,
+        0.01079438977712376
+      ],
+      "conditional_replication_distribution": "Exactly standard normal, given theta and mu; normalized deterministic weights have squared norm one."
+    }
+  },
+  "primary_analytic_single_point_omission_no_refit_probability_min_max": [
+    0.001034669652259588,
+    0.007347630695892726
+  ],
+  "partial_weight_construction": "Residualize fixed source-redshift vector on intercept, observed lens redshift, and survey indicator columns (one reference group), then normalize Euclidean norm to one.",
+  "partial_design_rank": 4,
+  "partial_design_columns": 4,
+  "max_abs_partial_weight_inner_product_with_design": 1.432187701766452e-14,
+  "joint_states": 2664,
+  "sample_iteration_first_last": [
+    33400,
+    99900
+  ],
+  "interpretation": "A descriptive residual projection conditional on the fitted model. Removing linear lens-redshift and additive survey-group projections is not causal adjustment, independent validation, or a frequentist significance test. No parameters were refitted. Posterior Monte Carlo dependence remains, although conditional replication noise has been eliminated analytically."
+}

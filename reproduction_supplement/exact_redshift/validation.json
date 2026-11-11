@@ -1,0 +1,103 @@
+{
+  "cases": [
+    {
+      "name": "signed_envelope",
+      "Omega_quantiles": [
+        -0.04273380272002891,
+        0.1152626045934829,
+        0.48835788605920366
+      ],
+      "gamma_z_quantiles": [
+        -0.4779497382583127,
+        -0.41367764559935216,
+        -0.27593776617836757
+      ],
+      "source_redshift_PPC": 0.0025471153787135644,
+      "partial_source_redshift_PPC": 0.01214275694624582,
+      "overall_PPC": 0.43511417526636664,
+      "max_Rhat": 1.000361672353979,
+      "min_ESS": 7441.889979465344,
+      "median_distance_sigma_mag": 0.1657274636203665
+    },
+    {
+      "name": "signed_no_envelope",
+      "Omega_quantiles": [
+        -0.04313083409503016,
+        0.11571630215199698,
+        0.4869832749465571
+      ],
+      "gamma_z_quantiles": [
+        -0.4787430402329432,
+        -0.4139228299222273,
+        -0.2779788901585767
+      ],
+      "source_redshift_PPC": 0.002439879311409591,
+      "partial_source_redshift_PPC": 0.011723193718703999,
+      "overall_PPC": 0.44629796147075107,
+      "max_Rhat": 1.0007245572211139,
+      "min_ESS": 6928.054421271874,
+      "median_distance_sigma_mag": 0.1630265145768242
+    },
+    {
+      "name": "gp_log",
+      "Omega_quantiles": [
+        -0.03766123745400124,
+        0.13533065945954004,
+        0.5330621113786765
+      ],
+      "gamma_z_quantiles": [
+        -0.4791916291115481,
+        -0.41895959845655667,
+        -0.2936146809046908
+      ],
+      "source_redshift_PPC": 0.0014088580210967804,
+      "partial_source_redshift_PPC": 0.004106873563291689,
+      "overall_PPC": 0.41580577727226825,
+      "max_Rhat": 1.0003018394477072,
+      "min_ESS": 13348.971599637702,
+      "median_distance_sigma_mag": 0.017443200402095755
+    },
+    {
+      "name": "gp_fid",
+      "Omega_quantiles": [
+        -0.039626476287178455,
+        0.12732918641249003,
+        0.514835818278181
+      ],
+      "gamma_z_quantiles": [
+        -0.47949325503758283,
+        -0.4180804147934953,
+        -0.2926815775114805
+      ],
+      "source_redshift_PPC": 0.0012445184981627433,
+      "partial_source_redshift_PPC": 0.003855966136942239,
+      "overall_PPC": 0.41635371889575534,
+      "max_Rhat": 1.0002720486207557,
+      "min_ESS": 13512.729756848088,
+      "median_distance_sigma_mag": 0.017443200402095755
+    }
+  ],
+  "checks": [
+    "unchanged lens and DES-row identities",
+    "same curvature/evolution priors",
+    "full covariance and positive definite distance factors",
+    "signed transfer and frame correction",
+    "saved chain quantiles and aligned latent iterations",
+    "input-array hashes",
+    "finite conditional lens predictions",
+    "rank/folded convergence screens"
+  ],
+  "baseline": {
+    "Omega_quantiles": [
+      -0.04666740939621909,
+      0.10739824301319251,
+      0.47132947857252155
+    ],
+    "gamma_z_quantiles": [
+      -0.47839693356240587,
+      -0.41650297870487574,
+      -0.28200146384733815
+    ],
+    "source_redshift_PPC": 0.0018424721962789843
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "version": "1.4.3",
+  "mode": "sgls",
+  "sn_type": "des",
+  "algorithm": "milp",
+  "criterion": "dd",
+  "tolerance": 0.05,
+  "omega_m": 0.3,
+  "input_target_rows": 130,
+  "valid_targets": 130,
+  "input_tracer_rows": 1820,
+  "valid_tracers": 1820,
+  "matched_targets": 92,
+  "yield_percent": 70.76923076923077,
+  "distinct_catalogue_rows": 184,
+  "distinct_physical_ids": null,
+  "tracer_id_column": null,
+  "uniqueness": "row",
+  "enforce_tracer_order": true,
+  "candidate_triplets_or_pairs": 446295,
+  "variables": 23504,
+  "constraints": 1903,
+  "nonzeros": 47008,
+  "formulation": "compact",
+  "solver": {
+    "maximum_cardinality": 92,
+    "secondary_cost": 0.02887436251085913,
+    "stages": [
+      {
+        "name": "maximum_cardinality",
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.17192880000220612,
+        "mip_gap": 0.0,
+        "dual_bound": -92.0,
+        "objective": -92.0
+      },
+      {
+        "name": "minimum_mismatch",
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.1426217000116594,
+        "mip_gap": 0.0,
+        "dual_bound": 11.549858889515159,
+        "objective": 11.549858889515159
+      }
+    ],
+    "optimal": true,
+    "canonicalization": {
+      "rule": "none",
+      "cost_tolerance": 1e-12,
+      "steps": 0,
+      "seconds": 0.0,
+      "second_stage_cost": 0.02887436251085913,
+      "cost_change": 0.0
+    }
+  },
+  "mean_relative_comoving_error": 0.005840581516474612,
+  "max_relative_comoving_error": 0.04730383061167311,
+  "covariance_kind": "total",
+  "covariance_validation": {
+    "shape": [
+      1820,
+      1820
+    ],
+    "symmetric": true,
+    "psd_checked": true,
+    "minimum_eigenvalue_if_needed": null,
+    "asymmetry_max_abs": 0.0,
+    "asymmetry_relative_to_matrix_max": 0.0,
+    "symmetry_rtol": 1e-06,
+    "roundoff_symmetrized_for_validation": false,
+    "roundoff_correction_applied": false
+  },
+  "target_covariance_validation": null,
+  "covariance_alignment": "explicit_zero_based_index",
+  "cross_probe_assumption": "not_assembled",
+  "observable_notes": [
+    "DL covariance uses a fixed calibration/absolute magnitude; additional calibration nuisance uncertainty must be supplied by the scientific analysis."
+  ],
+  "matrix_order": "all lens-role SN, then all source-role SN",
+  "timing_seconds": {
+    "load_validate": 0.09718589999829419,
+    "candidate_or_greedy": 0.02280320000136271,
+    "milp_solve": 0.3165588999981992,
+    "export": 0.07741169999644626,
+    "plots": 8.999923011288047e-07,
+    "total": 0.5772733000048902
+  },
+  "environment": {
+    "python": "3.12.12",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "platform": "Windows-10-10.0.19045-SP0"
+  },
+  "configuration": {
+    "file_paths": {
+      "tracer": "${REPOSITORY_ROOT}\\codeanddata\\DES-Dovekie_HD.csv",
+      "obj": "${REPOSITORY_ROOT}\\codeanddata\\130sgls2.CSV",
+      "covariance": "${REPOSITORY_ROOT}\\reproduction\\des_covariance.npy"
+    },
+    "col_cfg": {
+      "tracer_z_col": "zHD",
+      "z1_col": "zl",
+      "z2_col": "zs",
+      "cov_index_col": "Index",
+      "mu_col": "MU"
+    },
+    "params": {
+      "tol": 0.05,
+      "wm": 0.3,
+      "unique_by": "row",
+      "tie_break": "none",
+      "plots": false,
+      "require_covariance": true,
+      "output_dir": "${REPOSITORY_ROOT}\\reproduction\\match_all"
+    }
+  },
+  "inputs": {
+    "tracer": {
+      "path": "${REPOSITORY_ROOT}\\codeanddata\\DES-Dovekie_HD.csv",
+      "sha256": "c614821f2108f97279b753d1376b4200006ab0e95ab218d081db733fe7afd372"
+    },
+    "obj": {
+      "path": "${REPOSITORY_ROOT}\\codeanddata\\130sgls2.CSV",
+      "sha256": "5894d9ef542a9bc02ecbb0481db76d6496fe630f4cbaeb9b2d8e2e2f2cbc8215"
+    },
+    "covariance": {
+      "path": "${REPOSITORY_ROOT}\\reproduction\\des_covariance.npy",
+      "sha256": "1ece4bd0d9662267edc38678e91ea51f477c75e2984ad2ae0efeb21b4ab12888"
+    }
+  }
+}

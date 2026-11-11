@@ -1,0 +1,134 @@
+{
+  "version": "1.4.3",
+  "mode": "sgls",
+  "sn_type": "des",
+  "algorithm": "milp",
+  "criterion": "dd",
+  "tolerance": 0.05,
+  "omega_m": 0.3,
+  "input_target_rows": 130,
+  "valid_targets": 130,
+  "input_tracer_rows": 1641,
+  "valid_tracers": 1641,
+  "matched_targets": 88,
+  "yield_percent": 67.6923076923077,
+  "distinct_catalogue_rows": 176,
+  "distinct_physical_ids": null,
+  "tracer_id_column": null,
+  "uniqueness": "row",
+  "enforce_tracer_order": true,
+  "candidate_triplets_or_pairs": 347365,
+  "variables": 21282,
+  "constraints": 1724,
+  "nonzeros": 42564,
+  "formulation": "compact",
+  "solver": {
+    "maximum_cardinality": 88,
+    "secondary_cost": 0.02506727453495975,
+    "stages": [
+      {
+        "name": "maximum_cardinality",
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.14699800001108088,
+        "mip_gap": 0.0,
+        "dual_bound": -88.0,
+        "objective": -88.0
+      },
+      {
+        "name": "minimum_mismatch",
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "seconds": 0.13743580000300426,
+        "mip_gap": 0.0,
+        "dual_bound": 10.027008683382611,
+        "objective": 10.027008683382611
+      }
+    ],
+    "optimal": true,
+    "canonicalization": {
+      "rule": "none",
+      "cost_tolerance": 1e-12,
+      "steps": 0,
+      "seconds": 0.0,
+      "second_stage_cost": 0.02506727453495975,
+      "cost_change": 0.0
+    }
+  },
+  "mean_relative_comoving_error": 0.0055574198471007195,
+  "max_relative_comoving_error": 0.049497295454424155,
+  "covariance_kind": "total",
+  "covariance_validation": {
+    "shape": [
+      1820,
+      1820
+    ],
+    "symmetric": true,
+    "psd_checked": true,
+    "minimum_eigenvalue_if_needed": null,
+    "asymmetry_max_abs": 0.0,
+    "asymmetry_relative_to_matrix_max": 0.0,
+    "symmetry_rtol": 1e-06,
+    "roundoff_symmetrized_for_validation": false,
+    "roundoff_correction_applied": false
+  },
+  "target_covariance_validation": null,
+  "covariance_alignment": "explicit_zero_based_index",
+  "cross_probe_assumption": "not_assembled",
+  "observable_notes": [
+    "DL covariance uses a fixed calibration/absolute magnitude; additional calibration nuisance uncertainty must be supplied by the scientific analysis."
+  ],
+  "matrix_order": "all lens-role SN, then all source-role SN",
+  "timing_seconds": {
+    "load_validate": 0.10240920000069309,
+    "candidate_or_greedy": 0.022236999997403473,
+    "milp_solve": 0.2863915000052657,
+    "export": 0.07128440000815317,
+    "plots": 1.300009898841381e-06,
+    "total": 0.5479476999898907
+  },
+  "environment": {
+    "python": "3.12.12",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "platform": "Windows-10-10.0.19045-SP0"
+  },
+  "configuration": {
+    "file_paths": {
+      "tracer": "${REPOSITORY_ROOT}\\reproduction\\des_quality_catalogue.csv",
+      "obj": "${REPOSITORY_ROOT}\\codeanddata\\130sgls2.CSV",
+      "covariance": "${REPOSITORY_ROOT}\\reproduction\\des_covariance.npy"
+    },
+    "col_cfg": {
+      "tracer_z_col": "zHD",
+      "z1_col": "zl",
+      "z2_col": "zs",
+      "cov_index_col": "Index",
+      "mu_col": "MU"
+    },
+    "params": {
+      "tol": 0.05,
+      "wm": 0.3,
+      "unique_by": "row",
+      "tie_break": "none",
+      "plots": false,
+      "require_covariance": true,
+      "output_dir": "${REPOSITORY_ROOT}\\reproduction\\match_quality"
+    }
+  },
+  "inputs": {
+    "tracer": {
+      "path": "${REPOSITORY_ROOT}\\reproduction\\des_quality_catalogue.csv",
+      "sha256": "69baaedc700d789e39d76fc5b2038aed835a7e264925f899728ec42f7b1dbd44"
+    },
+    "obj": {
+      "path": "${REPOSITORY_ROOT}\\codeanddata\\130sgls2.CSV",
+      "sha256": "5894d9ef542a9bc02ecbb0481db76d6496fe630f4cbaeb9b2d8e2e2f2cbc8215"
+    },
+    "covariance": {
+      "path": "${REPOSITORY_ROOT}\\reproduction\\des_covariance.npy",
+      "sha256": "1ece4bd0d9662267edc38678e91ea51f477c75e2984ad2ae0efeb21b4ab12888"
+    }
+  }
+}
